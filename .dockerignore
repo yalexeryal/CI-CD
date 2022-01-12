@@ -1,0 +1,18 @@
+
+@@ -0,0 +1,16 @@
+# Ignore everything
+**
+
+# Allowed
+!logistic/
+!assets/
+!templates/
+!stocks_products/
+!manage.py
+!requirements.txt
+
+# Override allowed
+.idea/
+__pycache__/
+*.py[cod]
+*$py.class
