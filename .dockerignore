@@ -1,13 +1,11 @@
-
-@@ -0,0 +1,16 @@
 # Ignore everything
 **
 
 # Allowed
-!logistic/
+!apps/
 !assets/
 !templates/
-!stocks_products/
+!web_chat/
 !manage.py
 !requirements.txt
 

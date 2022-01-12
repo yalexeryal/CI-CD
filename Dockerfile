@@ -1,12 +1,12 @@
-FROM python:3.9
+FROM python:3.9-slim
 
-LABEL maintainer="Evgeny Surin <e97.wave@gmail.com>"
+LABEL maintainer="Alexander Ivanov <oz.sasha.ivanov@gmail.com>"
 
 # System envoriments
 ENV LANG=C.UTF-8 \
   PYTHONUNBUFFERED=1
 
-WORKDIR /stocks_products
+WORKDIR /app
 
 # Target requirements
 COPY requirements.txt .
@@ -20,4 +20,4 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["gunicorn", "stocks_products.wsgi", "-w", "4", "-t", "600", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn", "web_chat.wsgi", "-w", "4", "-t", "600", "-b", "0.0.0.0:8000"]

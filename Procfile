@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn stocks-products.wsgi
+web: gunicorn web_chat.wsgi
